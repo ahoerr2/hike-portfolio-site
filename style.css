@@ -1,0 +1,26 @@
+/* Space out intro and navbar */
+body > main {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.text {
+  padding-bottom: 2rem;
+}
+
+.project-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 0.85rem;
+  padding: 0.5rem;
+}
+
+.social-icon {
+  height: 25px;
+  fill: currentColor;
+}
