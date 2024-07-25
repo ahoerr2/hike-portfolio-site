@@ -1,12 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
-    <link rel="stylesheet" href="css/pico.amber.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="javascript.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/pico.amber.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="javascript.svg" type="image/svg+xml" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -18,55 +18,106 @@
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
-          <details class="dropdown">
-            <summary>
-              Projects
-            </summary>
-            <ul dir="rtl">
-              <li><a href="#project1">Project 1</a></li>
-              <li><a href="#project2">Project 2</a></li>
-              <li><a href="#project3">Project 3</a></li>
-            </ul>
-          </details>
+          <li>
+            <details class="dropdown">
+              <summary role="button" class="outline">Projects</summary>
+              <ul dir="rtl">
+                <li><a href="#project1">Project 1</a></li>
+                <li><a href="#project2">Project 2</a></li>
+                <li><a href="#project3">Project 3</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a href="https://github.com/ahoerr2/hike-portfolio-site">
+              <svg
+                class="navbar-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
-      
+
     <main class="container">
       <section class="title text">
         <h1>Alex Hoerr Portfolio</h1>
-        <p>This is a curated portfolio for <u><i>Hike Medical</i></u>. The projects chosen represent what I feel are most relevant to the position.</p>
-        <hr>
+        <p>
+          This is a curated portfolio for <u><i>Hike Medical</i></u
+          >. The projects chosen represent what I feel are most relevant to the
+          position.
+        </p>
+        <hr />
       </section>
       <section id="about" class="text">
         <h2>Professional Summary</h2>
-        <blockquote>With robust skills in React JS, Python, Data Science, and C++20, I bring versatile and proven software development capabilities to Hike Medical. My expertise is in both front-end and back-end technologies such as dynamic user interfaces, complex data analysis, and high-performance computing. I am well-prepared to contribute to Hike Medical's mission of delivering innovative medical solutions through my passion for problem-solving, learning ability, and diverse skillset.</blockquote>
-        <hr>
+        <blockquote>
+          With robust skills in React JS, Python, Data Science, and C++20, I
+          bring versatile and proven software development capabilities to Hike
+          Medical. My expertise is in both front-end and back-end technologies
+          such as dynamic user interfaces, complex data analysis, and
+          high-performance computing. I am well-prepared to contribute to Hike
+          Medical's mission of delivering innovative medical solutions through
+          my passion for problem-solving, learning ability, and diverse
+          skillset.
+        </blockquote>
+        <hr />
       </section>
       <section id="projects">
         <h2>Projects</h2>
         <div id="project-list">
           <article id="project1" class="project-card">
             <header>Project 1</header>
-            <img src="img/project1.png" alt="" class="project-image">
+            <img src="img/project1.png" alt="" class="project-image" />
             <div id="description1">
               <h4>React Movie Search</h4>
               <h6>2021</h6>
-              <p>Movie Search I made in college using <b>React JS and Bootstrap</b>. Gives user a searchbox they can use to search for movies on the omdb (Open Movie Database) by scraping and rendering results of their API as cards. These rendered cards contain basic data about the movie (summary, year, genre, etc.). </p>
+              <p>
+                I created a movie search application in college using React JS
+                and Bootstrap. The app allows users to search for movies on the
+                OMDB (Open Movie Database) by inputting a search term. The app
+                then scrapes and displays the results from the OMDB API as
+                cards. These cards contain essential movie information, such as
+                a summary, year of release, promotional art, and more.
+              </p>
               <div class="grid">
-                <a href="https://github.com/ahoerr2/React-Movie-Search" role="button" class="outline">
-                <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
+                <a
+                  href="https://github.com/ahoerr2/React-Movie-Search"
+                  role="button"
+                  class="outline"
+                >
+                  <svg
+                    class="social-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    />
+                  </svg>
                 </a>
-                <a href="https://alexhoerr.xyz/" role="button" class="outline">Website</a>
+                <a href="https://alexhoerr.xyz/" role="button" class="outline"
+                  >Website</a
+                >
               </div>
             </div>
-            <hr>
+            <hr />
             <footer id="expansion1">
               <details open>
                 <summary>Learn More</summary>
-                <p>The project shows a basic profiency in dynamic rendering using react js and more advanced usages of JavaScript such as mapping out and scraping and API. In addition Though the project is older it is a good demonstration of my culmination of skills as a web developer.</p>
+                <p>
+                  The project shows proficiency in dynamic rendering using React
+                  JS and more advanced usages of JavaScript, such as mapping
+                  out, scraping, and API. In addition, though the project is
+                  older, it is a good demonstration of my culmination of skills
+                  as a web developer.
+                </p>
                 <h6>Skills Learned</h6>
                 <ul>
                   <li>React Js</li>
@@ -80,21 +131,51 @@
           </article>
           <article id="project2" class="project-card">
             <header>Project 2</header>
-            <img src="img/project 2.jpg" alt="" class="project-image">
+            <img src="img/project 2.jpg" alt="" class="project-image" />
             <div id="description2">
               <h4>Mycardial Wall Segmentation</h4>
               <h6>2022 - 2023</h6>
-              <p>For my senior project I was tasked as lead of the AI development team for a myocarido segmentation project at the OSF Jump Labs. Below is a link to our colab to our data processor and AI model which was able to take in 4D dicom medical images and preform automatic segmentation to find different tissue sections of the heart. The goal was to segment the Myocardial wall which took a trained human around one hour to segment, our model took 5 minutes.</p>
+              <p>
+                For my senior project, I led the AI development team for a
+                myocardial segmentation project at OSF Jump Labs. Below is a
+                link to our Google Colab notebook, which contains our data
+                processor and AI model. The model was designed to process 4D
+                dicom medical images and automatically segment different heart
+                tissue sections. Our main objective was to segment the
+                Myocardial wall, a task that would take a human around one hour
+                to complete manually. However, our model was able to accomplish
+                this in just 5 minutes.
+              </p>
               <div class="grid">
-                <a href="https://colab.research.google.com/drive/13ZNxgmzR-sgAvCQwxGDbpzaL-giNO33G?usp=sharing" role="button" class="outline">Colab</a>
-                <a href="https://www.sciencedirect.com/science/article/pii/S0010482521009859?via%3Dihub" role="button" class="outline">Inspiration Research Paper</a>
+                <a
+                  href="https://colab.research.google.com/drive/13ZNxgmzR-sgAvCQwxGDbpzaL-giNO33G?usp=sharing"
+                  role="button"
+                  class="outline"
+                  >Colab</a
+                >
+                <a
+                  href="https://www.sciencedirect.com/science/article/pii/S0010482521009859?via%3Dihub"
+                  role="button"
+                  class="outline"
+                  >Inspiration Research Paper</a
+                >
               </div>
             </div>
-            <hr>
+            <hr />
             <footer id="expansion2">
               <details>
                 <summary>Learn More</summary>
-                <p>The project gave me direct experience in dealing with medical files such as Dicom files, and also allowed me to have a direct relationship under doctors and OSF. In addition it shows of my data processing and structing skills as the dicom images had to be processed into 4D numpy arrays which could then be sliced and iterated though. It also shows attention to detail as training, testing, and validation sets had to be carefully balanced to give the AI training results.</p>
+                <p>
+                  The project provided me with direct experience in working with
+                  medical files such as Dicom files and allowed me to establish
+                  a direct relationship with doctors and OSF. It also
+                  demonstrates my data processing and structuring skills as the
+                  Dicom images needed to be processed into 4D Numpy arrays,
+                  which could then be sliced and iterated. Additionally, it
+                  showcases attention to detail as I had to carefully balance
+                  the training, testing, and validation sets to produce
+                  effective AI training results.
+                </p>
                 <h6>Skills Learned</h6>
                 <ul>
                   <li>Medical Industry Experience</li>
@@ -110,25 +191,52 @@
           </article>
           <article id="project3" class="project-card">
             <header>Project 3</header>
-            <img src="img/project3.jpeg" alt="" class="project-image">
+            <img src="img/project3.jpeg" alt="" class="project-image" />
             <div id="description3">
               <h4>Advent of Code C++ Demo</h4>
               <h6>2024</h6>
-              <p>Project is day one of Advent of Code, fairly difficult coding challenges for programmers to show off their ability with 30 days of challenges. Here I solve day one of advent of code as proof of my modern coding ability.</p>
+              <p>
+                The project is my solution to Day One of Advent of Code, which
+                consists of complex coding challenges for programmers to
+                showcase their abilities over 25 days. In this project, I
+                demonstrate my current coding skills through the string parsing
+                and mapping done for day 1's solution while still maintaining
+                readability and ease of extension in the code.
+              </p>
               <div class="grid">
-                <a href="https://github.com/ahoerr2/advent-of-code-2023/tree/main/day1" role="button" class="outline">
-                <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
+                <a
+                  href="https://github.com/ahoerr2/advent-of-code-2023/tree/main/day1"
+                  role="button"
+                  class="outline"
+                >
+                  <svg
+                    class="social-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    />
+                  </svg>
                 </a>
-                <a href="https://adventofcode.com/" role="button" class="outline">Challenge Website</a>
+                <a
+                  href="https://adventofcode.com/"
+                  role="button"
+                  class="outline"
+                  >Challenge Website</a
+                >
               </div>
             </div>
-            <hr>
+            <hr />
             <footer id="expansion3">
               <details>
                 <summary>Learn More</summary>
-                <p>This represents my current coding ability and coding standards after my last job, the day has two segements which includes many different coding segements to show off C++20 acumen, problem solving skills, and a focus on readability</p>
+                <p>
+                  This represents my current coding ability and coding standards
+                  after my last job. The day has two segments allowing me to
+                  demonstrate C++20 acumen, problem-solving skills, and a focus
+                  on readability.
+                </p>
                 <h6>Skills Learned</h6>
                 <ul>
                   <li>C++20</li>
@@ -141,32 +249,60 @@
           </article>
         </div>
       </section>
-      <hr>
-    <footer id="contact">
-      <h4>Contact Information</h4>
-      <div id="contact-buttons" class="grid">
+      <hr />
+      <footer id="contact">
+        <h4>Contact Information</h4>
+        <div id="contact-buttons" class="grid">
           <a href="https://github.com/ahoerr2" role="button" class="outline">
-            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            <svg
+              class="social-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
             </svg>
           </a>
           <a href="mailto:ahoerr2@gmail.com" role="button" class="outline">
-            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+            <svg
+              class="social-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"
+              />
             </svg>
           </a>
-          <a href="https://www.linkedin.com/in/alex-hoerr" role="button" class="outline">
-            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          <a
+            href="https://www.linkedin.com/in/alex-hoerr"
+            role="button"
+            class="outline"
+          >
+            <svg
+              class="social-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+              />
             </svg>
           </a>
           <a href="tel:+3097406322" role="button" class="outline">
-            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"/>
+            <svg
+              class="social-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"
+              />
             </svg>
           </a>
-      </div>
-    </footer>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

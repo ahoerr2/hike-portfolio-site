@@ -24,3 +24,8 @@ body > main {
   height: 25px;
   fill: currentColor;
 }
+
+.navbar-icon {
+  height: 30px;
+  fill: currentColor;
+}
